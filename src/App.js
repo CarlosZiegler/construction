@@ -18,7 +18,7 @@ function App() {
     <div className="app">
       <div className="container">
         <img src={logo} className="logo" alt="" />
-        <h1>Estamos em construcão</h1>
+        <h1>Estamos em construção</h1>
         <Lottie className="lottieFile" options={defaultOptionsAnimation}
           height={"auto"}
           width={"50%"}
