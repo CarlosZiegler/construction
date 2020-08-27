@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Lottie from 'react-lottie'
+
+import dataAnimation from './assets/page.json'
+import logo from './assets/sitedobem.jpg'
+
+import './style.css'
+
+const defaultOptionsAnimation = {
+  loop: true,
+  autoplay: true,
+  animationData: dataAnimation,
+
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="container">
+        <img src={logo} className="logo" alt="" />
+        <h1>Estamos em construcão</h1>
+        <Lottie className="lottieFile" options={defaultOptionsAnimation}
+          height={"auto"}
+          width={"50%"}
+          isClickToPauseDisabled={true}
+        />
+      </div>
     </div>
   );
 }
